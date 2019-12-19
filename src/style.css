@@ -2,17 +2,30 @@
   user-select: none;
 }
 
+body, html{
+  height: 100%;
+}
+
 body {
   margin: 0;
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
 .image-container{
-  display: inline-block;
+  background-size: cover;
   margin: 8px;
+  background-position: center;
+  flex: calc(25% - 16px);
+  display: inline-block;
   background-image: url('assets/placeholder.png');
   background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
+  height: calc(50% - 16px);
+  width: 25%;
 }
 
 .image-container img{
